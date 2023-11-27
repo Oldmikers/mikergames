@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Google Calender</title>
+   
+ <title>Google Calender</title>
   <style>
+    body {
+      background-color: black;
+    }
+
+    h1 {
+      color: red;
+    }
+
     .red-button {
       background-color: red;
       color: black;
-       
+    }
+
+    .img-responsive {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
 <body>
   <h1>My Redirect Tool</h1>
 
-  <input type="text" id="urlInput" placeholder="Enter URL">
-  <button onclick="redirect()">Go</button>
+ <input type="text" id="urlInput" placeholder="Enter URL">
+ <button onclick="redirect()">Go</button>
 
-  <br><br>
+ <br><br>
+
   <button class="red-button" onclick="redirectTo('https://oldmikers.github.io/')">Go back</button>
   <button class="red-button" onclick="redirectTo('https://www.chess.com/')">Chess</button>
   <button class="red-button" onclick="redirectTo('https://sites.google.com/view/abcmath-u-46/home')">Page 0</button>
@@ -26,17 +41,18 @@
   <button class="red-button" onclick="redirectTo('https://flowos.shieldbotlist.xyz/events')">Page 4</button>
   <button class="red-button" onclick="redirectTo('https://walkin.glitch.me/')">Page 5</button>
 
-  <script>
-    function redirect() {
-      var url = document.getElementById("urlInput").value;
-      if (url) {
-        window.location.href = url;
-      }
-    }
+   
+ <script>
+ function redirect() {
+  var url = document.getElementById("urlInput").value;
+  if (url) {
+  window.location.href = url;
+  }
+ }
 
-    function redirectTo(url) {
-      window.location.href = url;
-    }
-  </script>
+ function redirectTo(url) {
+  window.location.href = url;
+ }
+ </script>
 </body>
 </html>
